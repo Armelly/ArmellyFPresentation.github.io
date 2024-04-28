@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Point Rush Player Form</title>
+  <link rel="stylesheet" text="text/css" href="./styles/intropage.css" />
+  <link href="https://fonts.cdnfonts.com/css/dimitri" rel="stylesheet">
+  <!-- Google fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Jersey+25&family=Kode+Mono:wght@400..700&family=Reddit+Mono:wght@200..900&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Jersey+25&family=Kode+Mono:wght@400..700&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Jersey+25&display=swap" rel="stylesheet">
+  <link href="https://fonts.cdnfonts.com/css/maiden-crimes" rel="stylesheet">
+</head>
+
+<body>
+  <section class="hero">
+    <div class="heroText">
+      <h3>Players Form</h3>
+      <h1>Point Rush</h1>
+      <p>
+        Get ready to embark on a thrilling journey in Points Rush, where the
+        race to 100 points is on! Roll the dice and feel the adrenaline rush
+        as you aim to outpace your opponents.
+      </p>
+      <h2>Fill out the game form, and let the exhilarating journey begin!</h2>
+    </div>
+
+
+
+    <div class="heroFormCon">
+      <div id="heroFText">
+        <h1>PLayers Form</h1>
+      </div>
+
+      <form action="game.html" method="get" id="introForm" name="nameForm">
+        <div id="formFormat">
+          <div>
+            <input id="fName" name="fName" placeholder="First name" size="30" type="text" />
+          </div>
+          <div class="errorMsg" id="fNameError"></div>
+
+          <div>
+            <input id="lName" name="lName" placeholder="Last name" size="30" type="text" />
+          </div>
+          <div class="errorMsg" id="lNameError"></div>
+
+          <div>
+            <input id="username" name="username" placeholder="Username" size="30" type="text" />
+          </div>
+          <div class="errorMsg" id="usernameError"></div>
+
+          <div>
+            <input type="text" name="phoneNumb" id="phoneNumb" placeholder="Phone Number" size="30" />
+          </div>
+          <div class="errorMsg" id="phoneNError"></div>
+
+          <div>
+            <input id="city" name="city" placeholder="City" size="30" type="text" />
+          </div>
+          <div class="errorMsg" id="cityError"></div>
+
+          <div>
+            <input type="email" name="email" id="email" placeholder="Email adrress" size="30" />
+          </div>
+          <div class="errorMsg" id="emailError"></div>
+
+          <input type="submit" id="submit" name="subButton" value="Check form" />
+          <input type="reset" id="clear" name="clearForm" value="clear" />
+        </div>
+    </div>
+
+  </section>
+
+
+  </form>
+  </div>
+
+  <footer>
+    <p>&copy;Armel Japhet Yameogo</p>
+
+  </footer>
+
+  <script src="./js/playFormValidation.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Point Rush</title>
+  <link rel="stylesheet" href="./styles/game.css" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Jersey+25&family=Kode+Mono:wght@400..700&family=Reddit+Mono:wght@200..900&display=swap"
+    rel="stylesheet">
+  <link href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+
+  <main>
+    <section class="gameText">
+      <h1>Point Rush</h1>
+      <button id="gameRuleButton">Game rules</button>
+      <!-- The Modal -->
+      <div id="myGameR" class="gameR">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h3>Objective</h3>
+          <p>Be the first player to reach 100 points or have the highest score at the end of the set rounds.</p>
+          <br>
+          <h3>Set up</h3>
+          <p>Players decide how many rounds they will play.</p>
+          <br>
+          <h3>Gameplay</h3>
+          <p>Decide the order of play.<br><br>
+            On a player's turn, they roll the die and tally up points with each roll.<br><br>
+            The player can roll as many times as they wish on a single turn, accumulating points. However, if they roll
+            a one, they lose all points from that turn, and their turn ends.<br><br>
+            If a player rolls multiple sixes, they can choose to "hold" and end their turn, securing the points earned
+            so far.
+            <br><br>
+            Once a player decides to hold, the die passes to the next player, and the cycle repeats.<br>
+            Play continues in this manner until a player reaches 100 points or until the set number of rounds is
+            completed.<br><br>
+            If a player reaches 100 points, they are the winner. Alternatively, if all rounds are completed, the player
+            with the highest score wins.
+          </p>
+        </div>
+    </section>
+
+    <div class="wrapper" class="clearfix">
+
+      <input type="number" id="input-rounds" class="input-rounds" placeholder="Enter number of rounds" min="1">
+      <button class="btn-start"><i class="ion-ios-plus-outline"></i>Start Game</button>
+
+      <div class="player-0-panel active">
+        <div class="player-name" id="name-0">Player 1</div>
+        <div class="player-score" id="score-0">0</div>
+
+        <div class="player-current-box">
+          <div class="player-current-label">Current</div>
+          <div class="player-current-score" id="current-0">0</div>
+        </div>
+      </div>
+
+      <div class="player-1-panel">
+        <div class="player-name" id="name-1">Player 2</div>
+        <div class="player-score" id="score-1">0</div>
+
+        <div class="player-current-box">
+          <div class="player-current-label">Current</div>
+          <div class="player-current-score" id="current-1">0</div>
+        </div>
+      </div>
+
+      <!-- <button class="btn-new">New game</button> -->
+      <button class="btn-roll"><i class="ion-ios-loop"></i>Roll dice</button>
+      <button class="btn-hold">
+        <i class="ion-ios-download-outline"></i>Hold
+      </button>
+      <button class="btn-quit"> <i class="ion-android-close"></i>Quit Game</button>
+
+
+
+
+      <img src="./img/dice.png" alt="Dice" class="dice" />
+    </div>
+
+  </main>
+
+  <footer id="PlayerInfo">
+    <div>
+      <p>Player info:</p>
+    </div>
+
+
+  </footer>
+
+
+
+
+
+
+  <script src="./js/game.js"></script>
+  <!-- <script src="./js/gametest.js"></script> -->
+</body>
+
+</html>

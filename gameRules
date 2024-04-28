@@ -1,0 +1,22 @@
+Points Rush (aka Pig)
+initial point of players starts at 0
+
+- Players decide how many rounds to play for
+-     One player rolls the die, tallying up points with every roll.
+- Can roll as many time as possible single turn.
+- If rolls a 1 - resets points to 0
+- if hold then points goes to other player
+- Once a player reaches 100 points, there is a winner!
+- Or at the end of the set rounds, the player with the most points win.
+
+class needed
+- player
+- game
+
+methods needed
+
+- rolldice
+  - check if the dice is = 1 if not
+    - Add to the current score
+    - check if player has a score of 100 or highest score
+- option to pass or keep player
